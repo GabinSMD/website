@@ -1,8 +1,8 @@
 /* Hallmark · shape: Conversational FAQ · genre: editorial · theme: Grid (deal 3/3, seed personnel-gabin-simond-veloppeur-b18b·b9da5400·2026-11-10·r0) · job: hire · draw: 355175
- * hero: Ledge · nav: slab · footer: letter close · imagery: the product (captures of the live sites) · signature: the claim at poster scale resting on the base of an ultramarine field
+ * hero: Ledge · nav: slab · footer: letter close · imagery: the product (captures of the live sites) · signature: the claim at poster scale resting on the base of a field of the logo blue
  * axes: light/grotesk-sans/cool · posture: full-palette · contrast: pass · fold: pass · v2.0.0 */
 /* Hallmark · pre-emit critique: P4 H4 E4 S4 R4 V4 · weakest: E, the toolbox is a long list, so it sits in disclosures */
-/* Hallmark · waive 23 · the ultramarine is the Grid theme's field token on a Ledge hero, posture full-palette · the field is the sheet the poster claim is printed on, and it holds no other colour */
+/* Hallmark · waive 23 · the logo blue is the field token on a Ledge hero, posture full-palette · the field is the sheet the poster claim is printed on, and it holds no other colour */
 @import url("./tokens.css");
 @import url("./base.css");
 
@@ -56,7 +56,7 @@ figcaption { margin-block-start: var(--space-sm); font-size: var(--text-sm); fon
   margin-inline-end: auto; text-decoration: none;
   font: var(--display-weight) var(--text-lg)/0.92 var(--font-display); letter-spacing: var(--tracking-display);
 }
-.wordmark::before { content: ""; grid-row: span 2; aspect-ratio: 1; background: var(--color-mark); }
+.wordmark__logo { grid-row: span 2; align-self: center; inline-size: 2.3em; block-size: 2.3em; fill: var(--color-field); }
 .wordmark__2 { font-weight: 400; }
 .slab__links { display: flex; gap: var(--space-lg); }
 .slab__links a {
