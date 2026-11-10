@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-10T08:52:31.280Z",
+        "reason": "agent: static scan cannot resolve the stylesheet (sizes come from tokens.css via @import); the rendered scan of the served page measures h2 at 56px against 16px body and does not report this rule"
+      }
+    ]
+  }
+}
