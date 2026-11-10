@@ -3,20 +3,43 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; font-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'none'; font-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Gabin Simond, développeur et DevSecOps</title>
+  <title>Gabin Simond, ingénieur cybersécurité, développeur et DevSecOps</title>
   <meta name="description" content="Ingénieur du numérique spécialisé en cybersécurité. Du code, un homelab et des projets faits maison : Pétanque Concours, StreamBox, FFD Connect.">
   <link rel="canonical" href="https://gabin-simond.fr/">
   <meta name="theme-color" content="#0f131c">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:url" content="https://gabin-simond.fr/">
-  <meta property="og:title" content="Gabin Simond, développeur et DevSecOps">
-  <meta property="og:description" content="Du code, un homelab et des projets faits maison.">
+  <meta property="og:title" content="Gabin Simond, ingénieur cybersécurité, développeur et DevSecOps">
+  <meta property="og:description" content="Ingénieur du numérique spécialisé en cybersécurité. Développement, DevSecOps, homelab.">
+  <meta property="og:image" content="https://gabin-simond.fr/images/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Gabin Simond. Développement, cybersécurité, homelab. gabin-simond.fr">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="preload" href="fonts/radio-canada-big.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/radio-canada.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="base.css">
   <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Gabin Simond",
+    "url": "https://gabin-simond.fr/",
+    "image": "https://gabin-simond.fr/images/og.png",
+    "jobTitle": "Ingénieur du numérique spécialisé en cybersécurité",
+    "email": "mailto:contact@gabin-simond.fr",
+    "telephone": "+33761168918",
+    "address": { "@type": "PostalAddress", "addressCountry": "FR" },
+    "sameAs": ["https://github.com/GabinSMD"]
+  }
+  </script>
 </head>
 <body>
   <a class="skip" href="#contenu">Aller au contenu</a>
@@ -26,8 +49,8 @@
       <a class="wordmark" href="#haut" aria-label="Gabin Simond, haut de page"><svg class="wordmark__logo" viewBox="0 0 256 256" aria-hidden="true"><path d="M40 0H256V46H48V152a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V40A40 40 0 0 1 40 0ZM104 108H256V216a40 40 0 0 1-40 40H0V210H210V154H104Z"/></svg><span>Gabin</span><span class="wordmark__2">Simond</span></a>
       <nav aria-label="Navigation principale">
         <ul class="slab__links">
-          <li><a href="#projets">Projets</a></li>
           <li><a href="#profil">Profil</a></li>
+          <li><a href="#projets">Projets</a></li>
           <li><a href="#outils">Outils</a></li>
         </ul>
       </nav>
@@ -38,16 +61,24 @@
   <main id="contenu">
     <section class="hero" id="haut">
       <div class="hero__field">
-        <div class="container">
+        <div class="container hero__top">
           <h1 class="poster">Je construis, je sécurise, j’auto-héberge.</h1>
+          <svg class="hero__logo" viewBox="0 0 256 256" aria-hidden="true"><path d="M40 0H256V46H48V152a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V40A40 40 0 0 1 40 0ZM104 108H256V216a40 40 0 0 1-40 40H0V210H210V154H104Z"/></svg>
         </div>
       </div>
       <div class="container hero__base">
-        <p class="lead">Développeur et DevSecOps&nbsp;: du code, un homelab, des projets faits maison.</p>
+        <p class="lead"><strong>Gabin Simond</strong>, ingénieur en cybersécurité, développeur et DevSecOps.</p>
         <div class="actions">
           <a class="btn btn--primary" href="#projets">Voir les projets</a>
           <a class="btn btn--secondary" href="https://github.com/GabinSMD" rel="noopener">GitHub</a>
         </div>
+      </div>
+    </section>
+
+    <section class="section" id="profil" aria-labelledby="t-profil">
+      <div class="container who">
+        <h2 id="t-profil">Qui suis-je&nbsp;?</h2>
+        <p class="statement">Ingénieur du numérique spécialisé en cybersécurité, diplômé d’une formation labellisée SecNumEdu par l’ANSSI, basé en France.</p>
       </div>
     </section>
 
@@ -87,7 +118,7 @@
             </ul>
           </li>
           <li class="index__row">
-            <h3>Ecole SAAS</h3>
+            <h3>École SaaS</h3>
             <p>Gestion d’école de danse.</p>
             <p class="index__links">Dépôt privé</p>
           </li>
@@ -98,34 +129,36 @@
     <section class="section section--case" aria-labelledby="t-cas">
       <div class="container case">
         <div class="case__head">
-          <h2 id="t-cas">Et sans réseau au boulodrome&nbsp;?</h2>
+          <h2 id="t-cas">Pétanque Concours, même sans réseau&nbsp;?</h2>
           <p class="lead">Tirages, poules, tableaux et scores fonctionnent hors ligne, puis se synchronisent.</p>
         </div>
         <figure class="case__shot">
-          <div class="shot shot--wide" data-slot="petanque">
-            <img src="images/screens/petanque.jpg" width="1440" height="900" alt="Page d’accueil de Pétanque Concours, avec un concours d’exemple en doublettes ouvert dans l’application" loading="lazy">
-          </div>
-          <figcaption>Pétanque Concours, capture du site en ligne</figcaption>
+          <a class="shot shot--wide" href="https://petanque.gabin-simond.fr/" rel="noopener">
+            <picture>
+              <source type="image/webp" srcset="images/screens/petanque-720.webp 720w, images/screens/petanque-1440.webp 1440w" sizes="(max-width: 60rem) 100vw, 1312px">
+              <img src="images/screens/petanque.jpg" width="1440" height="900" alt="Page d’accueil de Pétanque Concours, avec un concours d’exemple en doublettes ouvert dans l’application" loading="lazy">
+            </picture>
+          </a>
+          <figcaption>Pétanque Concours, concours de pétanque en SaaS multi-clubs</figcaption>
         </figure>
         <figure class="case__side case__side--a">
-          <div class="shot" data-slot="streambox">
-            <img src="images/screens/streambox.jpg" width="1440" height="900" alt="Page d’accueil de StreamBox" loading="lazy">
-          </div>
-          <figcaption>StreamBox</figcaption>
+          <a class="shot" href="https://gabinsmd.github.io/StreamBox/index.html" rel="noopener">
+            <picture>
+              <source type="image/webp" srcset="images/screens/streambox-720.webp 720w, images/screens/streambox-1440.webp 1440w" sizes="(max-width: 60rem) 100vw, 58vw">
+              <img src="images/screens/streambox.jpg" width="1440" height="900" alt="Page d’accueil de StreamBox" loading="lazy">
+            </picture>
+          </a>
+          <figcaption>StreamBox, boîte à outils open source pour streamers</figcaption>
         </figure>
         <figure class="case__side case__side--b">
-          <div class="shot" data-slot="ffd">
-            <img src="images/screens/ffd.jpg" width="1440" height="900" alt="Page d’accueil de FFD Connect" loading="lazy">
-          </div>
-          <figcaption>FFD Connect</figcaption>
+          <a class="shot" href="https://ffd.gabin-simond.fr" rel="noopener">
+            <picture>
+              <source type="image/webp" srcset="images/screens/ffd-720.webp 720w, images/screens/ffd-1440.webp 1440w" sizes="(max-width: 60rem) 100vw, 42vw">
+              <img src="images/screens/ffd.jpg" width="1440" height="900" alt="Page d’accueil de FFD Connect" loading="lazy">
+            </picture>
+          </a>
+          <figcaption>FFD Connect, danse sportive sur iPhone et Android</figcaption>
         </figure>
-      </div>
-    </section>
-
-    <section class="section" id="profil" aria-labelledby="t-profil">
-      <div class="container who">
-        <h2 id="t-profil">Qui suis-je&nbsp;?</h2>
-        <p class="statement">Ingénieur du numérique spécialisé en cybersécurité, diplômé d’une formation labellisée SecNumEdu par l’ANSSI, basé en France.</p>
       </div>
     </section>
 
@@ -134,28 +167,28 @@
         <div class="tools__head">
           <h2 id="t-outils">Avec quels outils&nbsp;?</h2>
         </div>
-        <div class="tools__list">
-          <details name="outils" open>
-            <summary><h3>Sécurité et DevSecOps</h3></summary>
-            <p>Authelia, CrowdSec, Fail2ban, Vaultwarden, SOPS + age, YubiKey, Trivy, Gitleaks, CodeQL, Renovate, Restic.</p>
-          </details>
-          <details name="outils">
-            <summary><h3>Infra et homelab</h3></summary>
-            <p>Proxmox, Docker, Debian, Raspberry Pi, ZimaBoard, Traefik, Caddy, Tailscale, Cloudflare, AdGuard Home, Terraform, Ansible, Forgejo, n8n.</p>
-          </details>
-          <details name="outils">
-            <summary><h3>Web et apps</h3></summary>
-            <p>React, Vite, PWA, Node.js, Fastify, Bun, Vitest, Docusaurus, Cloudflare Workers, PostgreSQL, Redis.</p>
-          </details>
-          <details name="outils">
-            <summary><h3>Langages</h3></summary>
-            <p>TypeScript, JavaScript, HTML, CSS, Bash.</p>
-          </details>
-          <details name="outils">
-            <summary><h3>Observabilité et CI/CD</h3></summary>
-            <p>Grafana, Prometheus, Loki, GitHub Actions, Git.</p>
-          </details>
-        </div>
+        <dl class="tools__list">
+          <div class="tools__row">
+            <dt>Sécurité et DevSecOps</dt>
+            <dd>Authelia, CrowdSec, Fail2ban, Vaultwarden, SOPS + age, YubiKey, Trivy, Gitleaks, CodeQL, Renovate, Restic.</dd>
+          </div>
+          <div class="tools__row">
+            <dt>Infra et homelab</dt>
+            <dd>Proxmox, Docker, Debian, Raspberry Pi, ZimaBoard, Traefik, Caddy, Tailscale, Cloudflare, AdGuard Home, Terraform, Ansible, Forgejo, n8n.</dd>
+          </div>
+          <div class="tools__row">
+            <dt>Web et apps</dt>
+            <dd>React, Vite, PWA, Node.js, Fastify, Bun, Vitest, Docusaurus, Cloudflare Workers, PostgreSQL, Redis.</dd>
+          </div>
+          <div class="tools__row">
+            <dt>Langages</dt>
+            <dd>TypeScript, JavaScript, HTML, CSS, Bash.</dd>
+          </div>
+          <div class="tools__row">
+            <dt>Observabilité et CI/CD</dt>
+            <dd>Grafana, Prometheus, Loki, GitHub Actions, Git.</dd>
+          </div>
+        </dl>
       </div>
     </section>
 
@@ -168,11 +201,7 @@
             <p>La sécurité dès le pipeline, pas à la fin.</p>
           </li>
           <li>
-            <h3>Homelab</h3>
-            <p>ZimaBoard, Raspberry Pi 4, Docker.</p>
-          </li>
-          <li>
-            <h3>Touche-à-tout</h3>
+            <h3>Polyvalent</h3>
             <p>TypeScript, JavaScript ou Bash, selon le projet.</p>
           </li>
           <li>
@@ -197,8 +226,13 @@
 
   <footer class="close">
     <div class="container close__in">
-      <p class="close__sign">À bientôt,<br>Gabin Simond</p>
-      <p class="close__note">Fait avec du café et un homelab qui ne dort jamais. France, 2026.</p>
+      <svg class="close__logo" viewBox="0 0 256 256" aria-hidden="true"><path d="M40 0H256V46H48V152a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V40A40 40 0 0 1 40 0ZM104 108H256V216a40 40 0 0 1-40 40H0V210H210V154H104Z"/></svg>
+      <div class="close__id">
+        <p class="close__sign">Gabin Simond</p>
+        <p class="close__line">Développement, cybersécurité, homelab</p>
+        <p class="close__line"><a href="https://gabin-simond.fr/">gabin-simond.fr</a></p>
+      </div>
+      <p class="close__note">France, 2026</p>
     </div>
   </footer>
 </body>
