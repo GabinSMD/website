@@ -5,16 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; font-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Gabin Simond, ingénieur cybersécurité, développeur et DevSecOps</title>
-  <meta name="description" content="Ingénieur du numérique spécialisé en cybersécurité. Du code, un homelab et des projets faits maison : Pétanque Concours, StreamBox, FFD Connect.">
+  <title>Gabin Simond, outils sur mesure, cybersécurité et DevSecOps</title>
+  <meta name="description" content="Votre problématique métier, un outil sur mesure. Gabin Simond, ingénieur cybersécurité et consultant intégration, indépendant : développement d’applications, DevSecOps, auto-hébergement.">
   <link rel="canonical" href="https://gabin-simond.fr/">
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#070d1c" media="(prefers-color-scheme: dark)">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Gabin Simond">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:url" content="https://gabin-simond.fr/">
-  <meta property="og:title" content="Gabin Simond, ingénieur cybersécurité, développeur et DevSecOps">
-  <meta property="og:description" content="Ingénieur du numérique spécialisé en cybersécurité. Développement, DevSecOps, homelab.">
+  <meta property="og:title" content="Gabin Simond, outils sur mesure, cybersécurité et DevSecOps">
+  <meta property="og:description" content="Votre problématique métier, un outil sur mesure. Développement, DevSecOps et auto-hébergement, en indépendant.">
   <meta property="og:image" content="https://gabin-simond.fr/images/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -32,7 +33,9 @@
     "name": "Gabin Simond",
     "url": "https://gabin-simond.fr/",
     "image": "https://gabin-simond.fr/images/og.png",
-    "jobTitle": "Ingénieur du numérique spécialisé en cybersécurité",
+    "description": "Ingénieur du numérique spécialisé en cybersécurité, consultant intégration et développeur indépendant.",
+    "jobTitle": "Ingénieur cybersécurité, consultant intégration",
+    "knowsAbout": ["Cybersécurité", "DevSecOps", "Développement web", "Auto-hébergement", "TypeScript", "Docker"],
     "email": "mailto:contact@gabin-simond.fr",
     "telephone": "+33761168918",
     "address": { "@type": "PostalAddress", "addressCountry": "FR" },
@@ -48,15 +51,15 @@
       <a class="brand" href="#haut" aria-label="Gabin Simond, haut de page"><svg class="brand__logo" viewBox="0 0 256 256" aria-hidden="true"><path d="M40 0H256V46H48V152a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V40A40 40 0 0 1 40 0ZM104 108H256V216a40 40 0 0 1-40 40H0V210H210V154H104Z"/></svg><span>Gabin Simond</span></a>
       <nav aria-label="Navigation principale">
         <ul class="nav__links">
-          <li><a href="#profil">Profil</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#projets">Projets</a></li>
+          <li><a href="#profil">Profil</a></li>
           <li><a href="#outils">Outils</a></li>
         </ul>
       </nav>
       <button class="theme" type="button" id="theme-toggle" aria-label="Passer au thème sombre">
-        <svg class="theme__sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
         <svg class="theme__moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+        <svg class="theme__sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
       </button>
       <a class="btn btn--primary btn--sm" href="#contact">Me contacter</a>
     </div>
@@ -66,87 +69,65 @@
     <section class="hero" id="haut">
       <div class="wrap hero__in">
         <div class="hero__text">
-          <p class="hero__who"><span class="hero__dot" aria-hidden="true"></span>Gabin Simond, France</p>
-          <h1>Ingénieur cybersécurité, développeur et DevSecOps<span class="dot" aria-hidden="true">.</span></h1>
-          <p class="hero__lead">Je construis, je sécurise, j’auto-héberge&nbsp;: du code, un homelab et des projets faits maison.</p>
+          <h1>Votre problématique métier, un outil sur mesure.</h1>
+          <p class="hero__lead"><strong>Gabin Simond</strong>, ingénieur cybersécurité et consultant intégration. Je pars de votre métier, puis je construis, je sécurise et j’héberge l’outil qui y répond, en indépendant.</p>
           <div class="actions">
-            <a class="btn btn--primary" href="#projets">Voir les projets</a>
-            <a class="btn btn--ghost" href="https://github.com/GabinSMD" rel="noopener">GitHub<svg class="ext" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 4 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          </div>
-          <p class="hero__cmd" aria-hidden="true"><span class="hero__prompt">$</span> build · secure · self-host · ship</p>
-        </div>
-        <div class="hero__stage" aria-hidden="true">
-          <div class="frame frame--back">
-            <picture>
-              <source type="image/webp" srcset="images/screens/streambox-720.webp 720w, images/screens/streambox-1440.webp 1440w" sizes="(max-width: 60rem) 70vw, 420px">
-              <img src="images/screens/streambox.jpg" width="1440" height="900" alt="">
-            </picture>
-          </div>
-          <div class="frame frame--front">
-            <picture>
-              <source type="image/webp" srcset="images/screens/petanque-720.webp 720w, images/screens/petanque-1440.webp 1440w" sizes="(max-width: 60rem) 90vw, 560px">
-              <img src="images/screens/petanque.jpg" width="1440" height="900" alt="">
-            </picture>
+            <a class="btn btn--primary" href="#contact">Demander un devis</a>
+            <a class="btn btn--ghost" href="#services">Voir les services</a>
           </div>
         </div>
+        <figure class="hero__stage">
+          <a class="frame" href="#p-petanque" tabindex="-1" aria-hidden="true">
+            <picture>
+              <source type="image/webp" srcset="images/screens/petanque-720.webp 720w, images/screens/petanque-1440.webp 1440w" sizes="(max-width: 60rem) 92vw, 600px">
+              <img src="images/screens/petanque.jpg" width="1440" height="900" alt="" fetchpriority="high">
+            </picture>
+          </a>
+          <figcaption>Un exemple en ligne&nbsp;: <a href="#p-petanque">Pétanque Concours</a>, la gestion de concours même sans réseau.</figcaption>
+        </figure>
       </div>
     </section>
 
-    <section class="section" id="profil" aria-labelledby="t-profil">
-      <div class="wrap profil">
-        <div class="profil__text">
-          <h2 id="t-profil">Profil</h2>
-          <p class="profil__lead">Ingénieur du numérique spécialisé en <strong>cybersécurité</strong>, basé en France. J’aime comprendre comment les choses fonctionnent, puis les reconstruire à ma façon.</p>
-        </div>
-        <ul class="facts">
-          <li class="fact">
-            <h3>Formation</h3>
-            <p>Diplôme d’ingénieur du numérique, spécialité cybersécurité. Formation labellisée SecNumEdu par l’ANSSI.</p>
-          </li>
-          <li class="fact">
-            <h3>DevSecOps</h3>
-            <p>La sécurité pensée dès le pipeline, pas ajoutée à la fin.</p>
-          </li>
-          <li class="fact">
-            <h3>Homelab</h3>
-            <p>Des ZimaBoard et un Raspberry Pi 4, du Docker, et toute ma stack à la maison.</p>
-          </li>
-          <li class="fact">
-            <h3>Documentation</h3>
-            <p>Je documente ce que je construis&nbsp;: un projet sans doc est un projet qu’on refait.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section section--services" id="services" aria-labelledby="t-services">
+    <section class="section" id="services" aria-labelledby="t-services">
       <div class="wrap">
         <div class="head">
           <h2 id="t-services">Services</h2>
-          <p>Ce que je peux prendre en charge pour vous, en indépendant.</p>
+          <p>Consultant intégration, j’ai une double vision&nbsp;: le produit et le métier d’un côté, la solution technique de l’autre. Chaque outil part d’un besoin concret.</p>
         </div>
-        <ul class="services">
-          <li class="service">
-            <h3>Développement web et applications</h3>
-            <p>Applications web, PWA utilisables hors-ligne et applications mobiles, en TypeScript.</p>
+        <ul class="needs" aria-label="Du besoin à l’outil">
+          <li class="need">
+            <p class="need__problem">Gérer un concours de pétanque, même sans réseau au boulodrome</p>
+            <svg class="arr" viewBox="0 0 24 16" aria-hidden="true"><path d="M1 8h21M16 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p class="need__tool"><a href="#p-petanque">Pétanque Concours</a></p>
           </li>
-          <li class="service">
-            <h3>Sites WordPress clés en main</h3>
-            <p>Installation et configuration, certificat SSL, protection contre les attaques courantes, sauvegardes automatiques, nom de domaine et hébergement.</p>
+          <li class="need">
+            <p class="need__problem">Outiller des streamers sans rien leur faire installer</p>
+            <svg class="arr" viewBox="0 0 24 16" aria-hidden="true"><path d="M1 8h21M16 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p class="need__tool"><a href="#p-streambox">StreamBox</a></p>
           </li>
-          <li class="service">
-            <h3>DevSecOps et sécurisation</h3>
-            <p>La sécurité intégrée au pipeline&nbsp;: analyse du code, détection de secrets, scan des images, dépendances tenues à jour.</p>
+          <li class="need">
+            <p class="need__problem">Donner aux danseurs leur licence, leurs compétitions et leur musique d’entraînement</p>
+            <svg class="arr" viewBox="0 0 24 16" aria-hidden="true"><path d="M1 8h21M16 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p class="need__tool"><a href="#p-ffd">FFD Connect</a></p>
           </li>
-          <li class="service">
-            <h3>Auto-hébergement et infrastructure</h3>
-            <p>Services auto-hébergés sous Docker&nbsp;: reverse proxy, authentification, supervision, sauvegardes, et la documentation qui va avec.</p>
-          </li>
-          <li class="services__cta">
-            <p>Un besoin précis&nbsp;? Décrivez-le, je vous réponds avec un devis.</p>
-            <a class="btn btn--primary btn--sm" href="mailto:contact@gabin-simond.fr?subject=Demande%20de%20devis">Demander un devis</a>
+          <li class="need">
+            <p class="need__problem">Gérer une école de danse</p>
+            <svg class="arr" viewBox="0 0 24 16" aria-hidden="true"><path d="M1 8h21M16 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p class="need__tool">École SaaS</p>
           </li>
         </ul>
+        <div class="also">
+          <h3>Et aussi</h3>
+          <ul class="also__list">
+            <li><strong>Sites WordPress clés en main.</strong> Installation, certificat SSL, protection contre les attaques courantes, sauvegardes automatiques, nom de domaine et hébergement.</li>
+            <li><strong>DevSecOps et sécurisation.</strong> Analyse du code, détection de secrets, scan des images, dépendances tenues à jour.</li>
+            <li><strong>Auto-hébergement et infrastructure.</strong> Services sous Docker, reverse proxy, authentification, supervision, sauvegardes, avec leur documentation.</li>
+          </ul>
+        </div>
+        <div class="quote">
+          <p>Un besoin précis&nbsp;? Décrivez-le à <a href="mailto:contact@gabin-simond.fr?subject=Demande%20de%20devis">contact@gabin-simond.fr</a> ou au <a href="tel:+33761168918">+33&nbsp;7&nbsp;61&nbsp;16&nbsp;89&nbsp;18</a>.</p>
+          <a class="btn btn--primary btn--sm" href="mailto:contact@gabin-simond.fr?subject=Demande%20de%20devis">Demander un devis</a>
+        </div>
       </div>
     </section>
 
@@ -157,105 +138,118 @@
           <p>Des applications en ligne, que vous pouvez ouvrir.</p>
         </div>
         <ul class="projects">
-          <li class="project project--lead">
-            <a class="project__shot" href="https://petanque.gabin-simond.fr/" rel="noopener" tabindex="-1" aria-hidden="true">
+          <li class="project project--lead" id="p-petanque">
+            <div class="project__shot">
               <picture>
               <source type="image/webp" srcset="images/screens/petanque-720.webp 720w, images/screens/petanque-1440.webp 1440w" sizes="(max-width: 60rem) 100vw, 640px">
               <img src="images/screens/petanque.jpg" width="1440" height="900" alt="" loading="lazy">
             </picture>
-            </a>
+            </div>
             <div class="project__body">
-              <p class="project__kind">SaaS multi-clubs</p>
-              <h3><a href="https://petanque.gabin-simond.fr/" rel="noopener">Pétanque Concours</a></h3>
+              <h3>Pétanque Concours</h3>
               <p class="project__desc">Gestion de concours de pétanque avec un mode hors-ligne complet&nbsp;: tirages, poules, tableaux et scores fonctionnent sans réseau au boulodrome, puis se synchronisent.</p>
-              <ul class="tags"><li>TypeScript</li><li>PWA</li><li>Hors-ligne</li></ul>
+              <ul class="tags"><li>SaaS multi-clubs</li><li>TypeScript</li><li>PWA</li><li>Hors-ligne</li></ul>
               <ul class="project__links"><li><a href="https://petanque.gabin-simond.fr/" rel="noopener">Ouvrir l’app<svg class="ext" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 4 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li><li><a href="https://github.com/GabinSMD/petanque" rel="noopener">Code<svg class="ext" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 4 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li></ul>
             </div>
           </li>
-          <li class="project">
-            <a class="project__shot" href="https://gabinsmd.github.io/StreamBox/index.html" rel="noopener" tabindex="-1" aria-hidden="true">
+          <li class="project" id="p-streambox">
+            <div class="project__shot">
               <picture>
               <source type="image/webp" srcset="images/screens/streambox-720.webp 720w, images/screens/streambox-1440.webp 1440w" sizes="(max-width: 60rem) 100vw, 640px">
               <img src="images/screens/streambox.jpg" width="1440" height="900" alt="" loading="lazy">
             </picture>
-            </a>
+            </div>
             <div class="project__body">
-              <p class="project__kind">Open source</p>
-              <h3><a href="https://gabinsmd.github.io/StreamBox/index.html" rel="noopener">StreamBox</a></h3>
+              <h3>StreamBox</h3>
               <p class="project__desc">Une boîte à outils gratuite pour streamers&nbsp;: chat multi-plateformes, alertes, objectifs, sondages, giveaways, timer de subathon, en overlays OBS, sans rien installer.</p>
-              <ul class="tags"><li>OBS</li><li>Open source</li></ul>
+              <ul class="tags"><li>Open source</li><li>OBS</li></ul>
               <ul class="project__links"><li><a href="https://gabinsmd.github.io/StreamBox/index.html" rel="noopener">Ouvrir le site<svg class="ext" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 4 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li><li><a href="https://github.com/GabinSMD/StreamBox" rel="noopener">Code<svg class="ext" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 4 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li></ul>
             </div>
           </li>
-          <li class="project">
-            <a class="project__shot" href="https://ffd.gabin-simond.fr" rel="noopener" tabindex="-1" aria-hidden="true">
+          <li class="project" id="p-ffd">
+            <div class="project__shot">
               <picture>
               <source type="image/webp" srcset="images/screens/ffd-720.webp 720w, images/screens/ffd-1440.webp 1440w" sizes="(max-width: 60rem) 100vw, 640px">
               <img src="images/screens/ffd.jpg" width="1440" height="900" alt="" loading="lazy">
             </picture>
-            </a>
+            </div>
             <div class="project__body">
-              <p class="project__kind">Application mobile</p>
-              <h3><a href="https://ffd.gabin-simond.fr" rel="noopener">FFD Connect</a></h3>
+              <h3>FFD Connect</h3>
               <p class="project__desc">Danse sportive sur iPhone et Android, en bêta ouverte&nbsp;: licence consultable sans réseau, programme des compétitions, musique d’entraînement. Non affiliée à la Fédération Française de Danse.</p>
               <ul class="tags"><li>iOS</li><li>Android</li><li>Bêta ouverte</li></ul>
               <ul class="project__links"><li><a href="https://ffd.gabin-simond.fr" rel="noopener">Ouvrir le site<svg class="ext" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 4 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li></ul>
             </div>
           </li>
-          <li class="project">
-            <a class="project__shot" href="https://homelab.gabin-simond.fr" rel="noopener" tabindex="-1" aria-hidden="true">
+          <li class="project" id="p-homelab">
+            <div class="project__shot">
               <picture>
               <source type="image/webp" srcset="images/screens/homelab-720.webp 720w, images/screens/homelab-1440.webp 1440w" sizes="(max-width: 60rem) 100vw, 640px">
               <img src="images/screens/homelab.jpg" width="1440" height="900" alt="" loading="lazy">
             </picture>
-            </a>
+            </div>
             <div class="project__body">
-              <p class="project__kind">Documentation</p>
-              <h3><a href="https://homelab.gabin-simond.fr" rel="noopener">Documentation Homelab</a></h3>
+              <h3>Documentation Homelab</h3>
               <p class="project__desc">Le journal de bord public de mon homelab&nbsp;: architecture, services auto-hébergés, durcissement, observabilité et runbooks, de quoi tout reconstruire de zéro.</p>
               <ul class="tags"><li>Proxmox</li><li>Docker</li><li>Docusaurus</li></ul>
               <ul class="project__links"><li><a href="https://homelab.gabin-simond.fr" rel="noopener">Lire la doc<svg class="ext" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 4 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li><li><a href="https://github.com/GabinSMD/homelab-doc" rel="noopener">Code<svg class="ext" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 4 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li></ul>
             </div>
           </li>
-          <li class="project project--text">
-            <div class="project__body">
-              <p class="project__kind">SaaS, dépôt privé</p>
-              <h3>École SaaS</h3>
-              <p class="project__desc">Un SaaS de gestion d’école de danse.</p>
-            </div>
-          </li>
         </ul>
+        <p class="private" id="p-ecole"><strong>École SaaS</strong>, un SaaS de gestion d’école de danse. Dépôt privé.</p>
       </div>
     </section>
 
-    <section class="section" id="outils" aria-labelledby="t-outils">
+    <section class="section" id="profil" aria-labelledby="t-profil">
+      <div class="wrap profil">
+        <div class="profil__text">
+          <h2 id="t-profil">Profil</h2>
+          <p class="profil__lead">Ingénieur du numérique spécialisé en <strong>cybersécurité</strong>, basé en France. J’aime comprendre comment les choses fonctionnent, puis les reconstruire à ma façon.</p>
+        </div>
+        <dl class="facts">
+          <div class="fact">
+            <dt>Aujourd’hui</dt>
+            <dd>Consultant intégration, entre le produit, le métier et la solution technique. Développeur indépendant en parallèle.</dd>
+          </div>
+          <div class="fact">
+            <dt>Formation</dt>
+            <dd>Diplôme d’ingénieur du numérique, spécialité cybersécurité. Formation labellisée SecNumEdu par l’ANSSI.</dd>
+          </div>
+          <div class="fact">
+            <dt>Homelab</dt>
+            <dd>Des ZimaBoard et un Raspberry Pi 4, du Docker, toute ma stack à la maison, et une <a href="#p-homelab">documentation publique</a> pour tout reconstruire.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section section--tools" id="outils" aria-labelledby="t-outils">
       <div class="wrap">
         <div class="head">
           <h2 id="t-outils">Boîte à outils</h2>
-          <p>Ce que j’utilise vraiment, dans mes projets et sur mon homelab.</p>
+          <p>Dans mes projets et sur mon homelab.</p>
         </div>
-        <div class="toolsets">
-          <div class="toolset toolset--lead">
-            <h3>Sécurité et DevSecOps</h3>
-            <ul class="chips"><li>Authelia</li><li>CrowdSec</li><li>Fail2ban</li><li>Vaultwarden</li><li>SOPS + age</li><li>YubiKey</li><li>Trivy</li><li>Gitleaks</li><li>CodeQL</li><li>Renovate</li><li>Restic</li></ul>
+        <dl class="toolrows">
+          <div class="toolrow">
+            <dt>Sécurité et DevSecOps</dt>
+            <dd>Authelia, CrowdSec, Fail2ban, Vaultwarden, SOPS + age, YubiKey, Trivy, Gitleaks, CodeQL, Renovate, Restic</dd>
           </div>
-          <div class="toolset">
-            <h3>Infra et homelab</h3>
-            <ul class="chips"><li>Proxmox</li><li>Docker</li><li>Debian</li><li>Raspberry Pi</li><li>ZimaBoard</li><li>Traefik</li><li>Caddy</li><li>Tailscale</li><li>Cloudflare</li><li>AdGuard Home</li><li>Terraform</li><li>Ansible</li><li>Forgejo</li><li>n8n</li></ul>
+          <div class="toolrow">
+            <dt>Infra et homelab</dt>
+            <dd>Proxmox, Docker, Debian, Raspberry Pi, ZimaBoard, Traefik, Caddy, Tailscale, Cloudflare, AdGuard Home, Terraform, Ansible, Forgejo, n8n</dd>
           </div>
-          <div class="toolset">
-            <h3>Web et apps</h3>
-            <ul class="chips"><li>React</li><li>Vite</li><li>PWA</li><li>Node.js</li><li>Fastify</li><li>Bun</li><li>Vitest</li><li>Docusaurus</li><li>Cloudflare Workers</li><li>PostgreSQL</li><li>Redis</li></ul>
+          <div class="toolrow">
+            <dt>Web et apps</dt>
+            <dd>React, Vite, PWA, Node.js, Fastify, Bun, Vitest, Docusaurus, Cloudflare Workers, PostgreSQL, Redis</dd>
           </div>
-          <div class="toolset">
-            <h3>Langages</h3>
-            <ul class="chips"><li>TypeScript</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>Bash</li></ul>
+          <div class="toolrow">
+            <dt>Langages</dt>
+            <dd>TypeScript, JavaScript, HTML, CSS, Bash</dd>
           </div>
-          <div class="toolset">
-            <h3>Observabilité et CI/CD</h3>
-            <ul class="chips"><li>Grafana</li><li>Prometheus</li><li>Loki</li><li>GitHub Actions</li><li>Git</li></ul>
+          <div class="toolrow">
+            <dt>Observabilité et CI/CD</dt>
+            <dd>Grafana, Prometheus, Loki, GitHub Actions, Git</dd>
           </div>
-        </div>
+        </dl>
       </div>
     </section>
 
@@ -263,9 +257,10 @@
       <div class="wrap">
         <div class="contact">
           <svg class="contact__logo" viewBox="0 0 256 256" aria-hidden="true"><path d="M40 0H256V46H48V152a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V40A40 40 0 0 1 40 0ZM104 108H256V216a40 40 0 0 1-40 40H0V210H210V154H104Z"/></svg>
-          <h2 id="t-contact">Une idée, une question, un projet&nbsp;?</h2>
+          <h2 id="t-contact">Un projet&nbsp;? Demandez un devis.</h2>
+          <p class="contact__lead">Décrivez votre besoin, votre contexte et votre échéance.</p>
           <div class="actions">
-            <a class="btn btn--light" href="mailto:contact@gabin-simond.fr">contact@gabin-simond.fr</a>
+            <a class="btn btn--light" href="mailto:contact@gabin-simond.fr?subject=Demande%20de%20devis">contact@gabin-simond.fr</a>
             <a class="btn btn--onblue" href="tel:+33761168918">+33 7 61 16 89 18</a>
             <a class="btn btn--onblue" href="https://github.com/GabinSMD" rel="noopener">GitHub<svg class="ext" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 4 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
