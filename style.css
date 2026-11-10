@@ -225,7 +225,13 @@ strong { font-weight: 600; color: var(--ink); }
 .head { margin-block-end: clamp(1.75rem, 4vw, 2.75rem); }
 .head p { margin-block-start: 0.75rem; max-width: 40rem; font-size: 1.0625rem; color: var(--ink-2); }
 
-/* Services: from the need to the tool */
+/* Services: one main offer, proved by the tools; two secondary lines */
+.offer { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 1rem clamp(1.5rem, 4vw, 4rem); align-items: start; margin-block-end: clamp(2rem, 4vw, 3rem); }
+.offer h3 { font-size: clamp(1.625rem, 1.1rem + 2vw, 2.5rem); letter-spacing: -0.03em; line-height: 1.1; }
+.offer p { font-size: clamp(1.0625rem, 1rem + 0.3vw, 1.1875rem); color: var(--ink-2); }
+.needs__label { margin-block-end: 0.875rem; font-weight: 600; color: var(--ink-2); }
+@media (max-width: 60rem) { .offer { grid-template-columns: minmax(0, 1fr); } }
+
 .needs { border-block-start: 1px solid var(--line); }
 .need {
   display: grid; grid-template-columns: minmax(0, 7fr) auto minmax(0, 4fr); align-items: center; gap: 1rem clamp(1rem, 3vw, 2rem);
@@ -255,10 +261,16 @@ strong { font-weight: 600; color: var(--ink); }
 @media (max-width: 60rem) { .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 30rem) { .steps { grid-template-columns: minmax(0, 1fr); } }
 
-.also { display: grid; align-items: baseline; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem clamp(1rem, 2.5vw, 2rem); margin-block-start: clamp(2rem, 4vw, 3rem); }
-.also h3 { font-size: 1.125rem; }
-.also__list { grid-column: 2 / -1; display: grid; gap: 0.75rem; color: var(--ink-2); }
-@media (max-width: 46rem) { .also { grid-template-columns: minmax(0, 1fr); } .also__list { grid-column: auto; } }
+.also { display: grid; align-items: baseline; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem clamp(1rem, 2.5vw, 2rem); margin-block-start: clamp(2.5rem, 5vw, 3.5rem); padding-block-start: clamp(2rem, 4vw, 2.75rem); border-block-start: 1px solid var(--line-strong); }
+.also h3 { font-size: 1.25rem; }
+.also__list { grid-column: 2 / -1; margin: 0; }
+.also__row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 0.25rem clamp(1rem, 2.5vw, 2rem); padding-block: 0.875rem; border-block-end: 1px solid var(--line); }
+.also__row:first-child { padding-block-start: 0; }
+.also__row dt { font-weight: 700; }
+.also__row dd { color: var(--ink-2); }
+.also__row a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--blue-text); text-decoration-thickness: 1.5px; text-underline-offset: 0.2em; transition: color 0.2s var(--ease); }
+.also__row a:hover { color: var(--blue-text); }
+@media (max-width: 46rem) { .also { grid-template-columns: minmax(0, 1fr); } .also__list { grid-column: auto; } .also__row { grid-template-columns: minmax(0, 1fr); } }
 .quote { margin-block-start: clamp(2rem, 4vw, 3rem); padding-block-start: 1.25rem; border-block-start: 1px solid var(--line); font-size: 1.0625rem; color: var(--ink-2); }
 .quote a { display: inline-block; padding-block: 0.25rem; font-weight: 600; }
 
@@ -312,13 +324,13 @@ strong { font-weight: 600; color: var(--ink); }
 @media (max-width: 60rem) { .profil { grid-template-columns: minmax(0, 1fr); } }
 @media (max-width: 34rem) { .fact { grid-template-columns: minmax(0, 1fr); } }
 
-/* Outils */
-.toolrows { border-block-start: 1px solid var(--line); }
-.toolrow { display: grid; grid-template-columns: 14rem minmax(0, 1fr); gap: 0.25rem 2rem; padding-block: 1rem; border-block-end: 1px solid var(--line); }
+/* Outils, inside the profile */
+.tools { grid-column: 1 / -1; margin-block-start: clamp(1rem, 3vw, 2rem); }
+.tools h3 { font-size: 1.25rem; margin-block-end: 1rem; }
+.toolrows { margin: 0; border-block-start: 1px solid var(--line); }
+.toolrow { display: grid; grid-template-columns: 14rem minmax(0, 1fr); gap: 0.25rem 2rem; padding-block: 0.875rem; border-block-end: 1px solid var(--line); }
 .toolrow dt { font-weight: 700; }
 .toolrow dd { color: var(--ink-2); }
-.toolrow:first-child dt { color: var(--blue-text); }
-.toolrow:first-child dd { color: var(--ink); }
 @media (max-width: 48rem) { .toolrow { grid-template-columns: minmax(0, 1fr); } }
 
 /* Contact: a flat panel of the brand blue, cut like the logo */
